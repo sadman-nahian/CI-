@@ -52,7 +52,7 @@ const Community = () => {
     if(user){
       fetchCreations()
     }
-  },[user])
+  },[user,fetchCreations])
 
   return !loading ? (
     <div className='flex-1 h-full flex flex-col gap-4 p-6'>

@@ -18,6 +18,7 @@ app.use('/api/ai', aiRouter);
 app.use('/api/user', userRouter);
 
 const port = process.env.PORT || 3303;
+const x=5
 
 app.listen(port, () => {
   console.log(`server is running at http://localhost:${port}`);

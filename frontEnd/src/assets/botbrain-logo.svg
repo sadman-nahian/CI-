@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="220" viewBox="0 0 1000 220">
+  <style>
+    :root { --logo-color: #000; }
+    .logo { color: var(--logo-color); }
+    .stroke { fill: none; stroke: currentColor; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .fill   { fill: currentColor; vector-effect: non-scaling-stroke; }
+    .text   { fill: none; stroke: currentColor; stroke-width: 5; paint-order: stroke; vector-effect: non-scaling-stroke;
+              font: 800 86px/1.1 system-ui, -apple-system, Segoe UI, Inter, Roboto, Helvetica, Arial;
+              letter-spacing: .6px; dominant-baseline: middle; }
+  </style>
+
+  <!-- layout guides (commented out)
+  <rect x='0' y='0' width='1000' height='220' fill='none' stroke='#ccc' />
+  <line x1='0' y1='110' x2='1000' y2='110' stroke='#eee'/>
+  -->
+
+  <g class="logo" transform="translate(40,22)">
+    <!-- ICON centered vertically at y=88 (22 + 88 = 110 overall) -->
+    <g transform="translate(0,22)">
+      <!-- Head -->
+      <ellipse class="stroke" cx="110" cy="88" rx="88" ry="66"/>
+      <!-- Ears -->
+      <circle class="stroke" cx="30"  cy="88" r="18"/>
+      <circle class="stroke" cx="190" cy="88" r="18"/>
+      <!-- Antenna -->
+      <line class="stroke" x1="110" y1="18" x2="110" y2="42"/>
+      <circle class="stroke" cx="110" cy="12" r="10"/>
+      <!-- Eyes -->
+      <circle class="fill"   cx="82"  cy="84" r="10"/>
+      <circle class="fill"   cx="138" cy="84" r="10"/>
+      <!-- Mouth -->
+      <path class="stroke" d="M84,120 Q110,138 136,120"/>
+    </g>
+
+    <!-- TEXT aligned to same vertical center (y=110 overall) -->
+    <text class="text" x="260" y="110">BotBrain <tspan font-weight="900">AI</tspan></text>
+  </g>
+</svg>
